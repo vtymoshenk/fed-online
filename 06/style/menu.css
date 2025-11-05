@@ -11,13 +11,7 @@ background-color:#f7b3b3;
     background: #fff;
     padding: 56px 22px 91px 20px;
 }
-/* form{
-    border: none;
-    border-radius: 12px;
-    width: 316px;
-    height: 44px;
-    background-color: #efefef;
-} */
+
 button{
     border: none;
     background-color:  #fff;
@@ -31,6 +25,8 @@ button{
     height: 74px;
     border-radius: 12px;
     background-color: #efefef;
+    text-align: center;
+    padding: 15px;
     
 }
 
@@ -53,11 +49,34 @@ background-color: #eae2b7;
     color: #003049;
     margin:  32px 251px 26px 2px;
 }
+.burger-img{
+    display: inline-block;
 
-        
+    
+}
+.burger-name{
+font-size: 16px;
+    color: #003049;
+    padding: 0;
+    margin-bottom: 2px ;
+}
+.burger-price{
+    margin: 0;
+        font-size: 14px;
+    color: #d62828;
+}
+
+      
+.title-price{
+    display: inline-block;
+}
 .burger-position{
     width: 316px;
         height: 88px;
         border-radius: 10px;
-   display: inline-block;
+        border: 2px solid gray;
+        padding: 5px;
+}
+.burger-position:not(:last-child){
+margin-bottom: 12px;
 }
