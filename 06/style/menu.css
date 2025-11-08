@@ -3,6 +3,8 @@
 }
 body{
 background-color:#f7b3b3;
+font-family: "Inter",
+    sans-serif;
 }
 .container{
     width: 360px;
@@ -15,9 +17,20 @@ background-color:#f7b3b3;
 button{
     border: none;
     background-color:  #fff;
+    margin-bottom: 23px;
+}
+h1{
+font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 17px;
+}
+.search-input {
+    padding: 5px 10px;
+    width: 230px;
+    margin-bottom: 29px;
 }
 .menu-items{
-    margin-top: 29px;
+ 
     padding: 0px 46px 0px 4px;   
 }
 .position-img{
@@ -32,6 +45,8 @@ button{
 
 .position-title{
     color:#c4c4c4;
+    font-weight: 500;
+        font-size: 16px
 }
 .menu-position{
     display: inline-block;
@@ -48,6 +63,8 @@ background-color: #eae2b7;
 .burger-title{
     color: #003049;
     margin:  32px 251px 26px 2px;
+    font-weight: 500;
+        font-size: 20px;
 }
 .burger-img{
     display: inline-block;
@@ -59,9 +76,11 @@ font-size: 16px;
     color: #003049;
     padding: 0;
     margin-bottom: 2px ;
+    font-weight: 400;
 }
 .burger-price{
     margin: 0;
+    font-weight: 500;
         font-size: 14px;
     color: #d62828;
 }
@@ -80,8 +99,4 @@ font-size: 16px;
 }
 .burger-position:not(:last-child){
 margin-bottom: 12px;
-}
-.search-input {
-    padding: 5px 10px;
-    width: 230px;
 }
