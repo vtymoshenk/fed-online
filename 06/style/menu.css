@@ -69,6 +69,7 @@ font-size: 16px;
       
 .title-price{
     display: inline-block;
+    vertical-align: top;
 }
 .burger-position{
     width: 316px;
@@ -79,4 +80,8 @@ font-size: 16px;
 }
 .burger-position:not(:last-child){
 margin-bottom: 12px;
+}
+.search-input {
+    padding: 5px 10px;
+    width: 230px;
 }
