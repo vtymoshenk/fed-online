@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+
+  margin: 0;  
+background-color: #E5E5E5;
+}
+
+.diia-flag{
+    position: relative;
+        top: 300px;
+            left: 80px;
+   width: 512px;
+   height: 512px; 
+   background-color: #000;
+   z-index: 2;
+}
+.vector{
+position: absolute;
+    top: 128px;
+        left: 74px
+
+}
+.flag-mini{
+    position:absolute;
+    top: 343px;
+        left: 216px;
+        
+border-radius: 6px;
+}
+.flag-mini-blue{
+    height: 30px;
+        width: 80px;
+    background-color: #2137fc;
+}
+.flag-mini-yellow{
+    height: 30px;
+        width: 80px;
+background-color: #FFCE22;
+}
+.flag{
+    position:relative;
+    top: 180px;
+    left: 521px;
+        height: 512px;
+        width: 512px;
+        background-color: #FFCE22;
+        z-index: 3;
+}
+
+.img-glyph{
+    position:absolute;
+    bottom: 140px;
+        left: 56px;
+}
+
+.circle{
+    position:relative;
+    top: 87px;
+        left: 927px;
+z-index: 1;
+    border-bottom: 2px solid #2137fc;
+    border-top: 2px solid #2137fc;
+    width: 512px;
+        height: 512px;
+        background: #fff;
+    
+}
+.circle-in {
+    width: 444px;
+    height: 444px;
+   
+    border-radius: 50%;
+    background-color: #FFCE22;
+    
+    margin: 34px;
+}
+.svg-glyph{
+    position:absolute;
+        bottom: 49px;
+            left: 71px;
+    
+}
