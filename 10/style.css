@@ -37,10 +37,10 @@ font-weight: 400;
 }
 
 .cont-cards{
-    
+    overflow: hidden;
 }
 .card{
-    display: inline-block;
+    float: inline-start;
     width: 295px;
         max-height: 470px;
         background-color: #ffffff;
@@ -52,7 +52,8 @@ font-weight: 400;
 }
 
 .img-avatar{
-    width: 100%;
+    width:120px;
+    height: 120px;
       
         display: block;
             margin: 0 auto;
