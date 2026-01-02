@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+}
+body{
+ 
+  
+    background-color: #fff;
+    font-family: "Nunito Sans", sans-serif;
+}
+a{
+    color: #000;
+}
+
+.big-container{
+ width: 82%;
+margin: 0 auto;
+}
+
+.container {
+    
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.header-container{
+    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 55px;
+    margin-bottom: 160px;
+   
+}
+
+.menu{
+   display: flex;  
+    flex-direction: row;  
+    gap: 35px;
+}
+
+
+.menu-li2{
+gap:30px;
+}
+
+.logo{
+font-family: "Roboto", sans-serif;;
+font-weight: 900;
+font-size: 32px;
+line-height: 120%;
+letter-spacing: 0.06em;
+}
+.menu-link{
+    position:relative;
+   font-weight: 400;
+font-size: 19px;
+line-height: 120%;
+letter-spacing: 0.05em; 
+}
+.menu-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: orange;
+  border-radius: 50%;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+/* hover */
+.menu-link:hover::after {
+  opacity: 1;
+}
+
+/* активная страница */
+.menu-link.active::after {
+  opacity: 1;
+}
+
+.photo{
+
+  width: 411px;
+    height: 533px;   
+    
+}
+.photo-img{
+   width: 100%;
+}
+
+.section-container{
+  display: flex;
+    justify-content: space-between;
+    align-self: self-start;
+    flex-direction: row;
+    
+}
+h3{
+    font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+letter-spacing: 0.04em;
+color: #f2994a;
+}
+.container-work-space{
+    margin-right: 60px;
+}
+.work-space {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.plus-icon {
+  flex-shrink: 0;
+}
+h1{
+    position: relative;
+font-weight: 800;
+font-size: 65px;
+line-height: 120%;
+letter-spacing: 0.02em;
+color: #000;
+width: 553px;
+
+}
+
+h1::after{
+    content:"";
+    position: absolute;
+    border-radius: 4px;
+width: 188px;
+height: 6px;
+background-color: #f2994a;
+left: 0;             /* откуда начинается */
+    bottom: -71px;
+
+}
+.text{
+    font-family:"Roboto", sans-serif;
+   font-weight: 400;
+font-size: 16px;
+line-height: 180%;
+letter-spacing: 0.06em;
+color: #4f4f4f; 
+width: 421px;
+margin-top: 101px;
+margin-bottom: 32px;
+}
+
+.circle-buttom{
+   
+    border-radius: 50%;
+background-color: #3f9ab7;
+width: 85px;
+height: 85px;
+ display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.video{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 21px;
+    margin-bottom: 51px;
+}
+.text-video{
+font-weight: 700;
+font-size: 18px;
+line-height: 120%;
+letter-spacing: 0.06em;
+color: #000;
+
+}
+.icons-container{
+    display: flex;
+    align-self: self-end;
+    margin-bottom: 50px;
+    
+}
+.icons{
+    display:flex;
+    flex-direction: column;
+   align-items:center ;
+   gap: 5px;
+   position: relative;
+}
+
+.icons::before{
+    content: "";
+    position:absolute;
+    width: 1px;
+height: 401px;
+background-color: #333;
+bottom: 116px;
+}
+.icons-social{
+     stroke-width: 1.30px;
+stroke: #000;
+
+}
+.icons-social:hover{
+opacity: 1;
+stroke-width: 1.30px;
+stroke: #fefefe;
+}
+.svg-div{
+width: 34px;
+height: 34px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.svg-div:hover{
+border-radius: 50px;
+background-color: #f2994a;
+
+}
+
+footer {
+height: 118px;
+  background-color: #3f9ab7;
+   margin-bottom: 45px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+.user-img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+
+ .user1{
+    position: relative;
+
+}
+.user2{
+ position: relative;
+ left: -27px;
+}
+.user3{
+   position: relative;
+   left: -47px;
+
+} 
+.client-text{
+font-weight: 400;
+font-size: 20px;
+color: #fff;
+}
+.client-number{
+    font-weight: 700;
+font-size: 24px;
+}
+
+.rectangle{
+    position:absolute;
+    z-index: -1;
+    width: 118px;
+    height: 100%;
+    background-color: #f9f9f9;
+    left: 230px;
+    top:0;
+}
