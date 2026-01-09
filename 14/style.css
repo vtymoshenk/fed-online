@@ -222,22 +222,24 @@ nav a:hover::after{
     justify-content: center;
     align-items: center;
 }
-.client-image{
+.client-img{
     width: 55px;
     height: 55px;
-    border-radius: 100%;
+    border-radius: 50%;
     overflow: hidden;
     position: relative;
     text-align: center;
 }
-.client-image>img{
+
+.client-img>img{
     width: 100%;
 }
-.client-image:nth-child(2){
+.client-img:nth-child(2){
     left: -10px;
 }
-.client-image:nth-child(3){
+.client-img:nth-child(3){
     left: -20px;
+   
 }
 .client-info{
     color: #fff;
