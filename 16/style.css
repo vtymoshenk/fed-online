@@ -148,14 +148,14 @@ header .container{
 
 .genre{
     display:flex;
-    gap:24px
+    gap:24px;
+    margin-bottom: 35px;
 }
  .genre h3{
     font-weight: 500;
 font-size: 32px;
 position:relative;
-padding-right: 28px;
-
+padding-right: 48px;
 
 }
 
@@ -180,7 +180,7 @@ position:absolute;
 font-weight: 800;
 font-size: 64px;
 letter-spacing: 0.06em;
-margin-bottom: 16px;
+margin-bottom: 35px;
 }
 
 
