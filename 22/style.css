@@ -18,6 +18,9 @@ color: #0f89fa;
  transition: 1s;
  font-size: 16px;
  font-weight: 500;
+  display: flex;            
+  align-items: center;        
+  justify-content: center; 
 }
 .buttons-container{
     display: grid;
@@ -64,35 +67,58 @@ color: #0f89fa;
     inset -5.40em 0 0 0 #0f89fa;
     color: #fff;
 }
+.btn-7{
+    background-color: #0f89fa;
+    color: #000;
+    position: relative;
+    overflow: hidden;
+}
+ /*button:before (attr data-hover)*/
+    .btn-7:hover:before{opacity: 1; transform: translate(0,0);}
+    .btn-7:before{ 
+      content: attr(data-hover);
+      position: absolute;
+      top: 1.1em; left: 0;
+      width: 100%;
+      opacity: 0;
+      transform: translate(0,-100%);
+      transition: all .3s ease-in-out;
+    }
+      /*button div (button text before hover)*/
+      .btn-7:hover div{opacity: 0; transform: translate(0,100%)}
+     .btn-7 div{
+        transition: all .3s ease-in-out;
+      }
 .btn-8{
 position: relative;
 cursor: pointer;
   overflow: hidden;
    background: transparent;
+   border: none
+   
 }
 .btn-8::before{
-     content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width:50%;
-  height: 100%;
-  background:#0f89fa ;
-  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  z-index: 0;
+  	transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		content: '';
+		width: 50%;
+		height: 100%;
+		background: #0f89fa;
+		position: absolute;
+		top: 0;
+		left: 0;
+        z-index: 0; 
 }
 
 .btn-8 span{
-
-position: relative;
-  color: white;
-  mix-blend-mode: difference;
+     position: relative;
   z-index: 1;
-
+		mix-blend-mode: difference;
+        transition: color 0.2s ease 0.25s;
+        
 }
 
-.btn-8::before:hover {
-    height: 100%;
+.btn-8:hover::before {
+    background: #0f89fa;
   width: 100%;
 }
 
@@ -116,3 +142,199 @@ height: 60px;
       color: #fff;
 }
 
+.wrapper-11 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn-explore {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 56px;
+  padding: 0 28px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+
+  text-decoration: none;
+  cursor: pointer;
+
+  position: relative;
+  overflow: hidden;
+
+  transition: 
+    padding-right 0.35s ease,
+    background 0.35s ease,
+    color 0.35s ease;
+      border: 2px solid #0f89fa;
+  color: #0f89fa;
+  background: transparent;
+}
+
+.label {
+  transition: transform 0.35s ease;
+}
+.icon {
+  margin-left: 0px;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.35s ease;
+}
+
+.btn-explore:hover {
+  padding-right: 38px; 
+   background: #0f89fa;
+  color: white;
+}
+.btn-explore:hover .icon {
+  opacity: 1;
+  transform: translateX(0);
+  margin-left: 22px;
+}
+
+.fancy-btn {
+ --offset: 10px;
+  --border-size: 2px; 
+border: none;
+  position: relative;
+  box-shadow: inset 0 0 0 var(--border-size) currentColor;
+
+  transition: background 0.4s ease;
+}
+
+.fancy-btn__horizontal,
+.fancy-btn__vertical {
+  position: absolute;
+  top: var(--h-offset, 0);
+  right: var(--v-offset, 0);
+  bottom: var(--h-offset, 0);
+  left: var(--v-offset, 0);
+
+  transition: transform 0.6s ease;
+  pointer-events: none;
+}
+
+
+.fancy-btn__horizontal {
+  --v-offset: calc(var(--offset) * -1);
+
+  border-top: var(--border-size) solid currentColor;
+  border-bottom: var(--border-size) solid currentColor;
+}
+
+.fancy-btn__horizontal::before {
+  content: "";
+  position: absolute;
+
+  top: calc(var(--v-offset) - var(--border-size));
+  bottom: calc(var(--v-offset) - var(--border-size));
+  left: calc(var(--v-offset) * -1);
+  right: calc(var(--v-offset) * -1);
+
+  border-top: inherit;
+  border-bottom: inherit;
+}
+
+
+.fancy-btn__vertical {
+  --h-offset: calc(var(--offset) * -1);
+
+  border-left: var(--border-size) solid currentColor;
+  border-right: var(--border-size) solid currentColor;
+}
+
+.fancy-btn__vertical::before {
+  content: "";
+  position: absolute;
+
+  top: calc(var(--h-offset) * -1);
+  bottom: calc(var(--h-offset) * -1);
+  left: calc(var(--h-offset) - var(--border-size));
+  right: calc(var(--h-offset) - var(--border-size));
+
+  border-left: inherit;
+  border-right: inherit;
+}
+
+.fancy-btn:hover .fancy-btn__horizontal {
+  transform: scaleX(0);
+}
+
+.fancy-btn:hover .fancy-btn__vertical {
+  transform: scaleY(0);
+}
+
+.btn-13{
+    border: none;
+    border-radius:50px;
+
+}
+.btn-13 span{
+    position: relative;
+    z-index: 1;
+    color:#fff;
+    /* mix-blend-mode: different; */
+}
+.btn-13:before{
+    position: absolute;
+    z-index: 0;
+     border-radius: 50px; 
+     width: 25%; 
+     background:#0f89fa; 
+    }
+    .btn-13:hover::before {
+  background: #0f89fa;
+  width: 100%;
+}
+.btn-14{
+    position:relative;
+    border: none;
+    color:#fff;
+    overflow: hidden;
+  
+}
+.btn-14::before,
+.btn-14::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 60%;
+   transform: skewX(25deg);
+  transition: all  0.5s cubic-bezier(.31,.55,.93,1.02);
+  z-index: -1;
+}
+
+/* ЛЕВАЯ ПЛАШКА */
+.btn-14::before {
+  background-color: #51b851;  
+  top: -16px;
+  left: -17px;
+  
+}
+
+/* ПРАВАЯ ПЛАШКА */
+.btn-14::after {
+  background-color: #0f89fa;;   
+  top: 1rem;
+  left: 4.8rem;
+  
+}
+
+/* HOVER */
+.btn-14:hover::before,
+.btn-14:hover::after {
+  top: 0;
+  transform: skewX(0deg);
+}
+
+.btn-14:hover::after {
+  left: -0.7rem;
+}
+
+.btn-14:hover::before {
+  left: 3.60rem;
+}

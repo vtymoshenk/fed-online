@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>22</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,14 +20,23 @@
             <button class="btn-4">Slide</button>
          <button class="btn-5">Raise</button>
             <button class="btn-6">Close</button>
-           <button class="btn-7">Notify</button>
+           <button data-hover="Thanks" class="btn-7"><div>Notify</div></button>
            <button class="btn-8"><span>Hover Me</span></button>
             <button class="btn-9">Zoom</button>
             <button class="btn-10">Offset</button>
-            <button class="btn-11">Explore More</button>
-        <button class="btn-12">Fancy Button</button>
+        <div class="wrapper-11">
+  <a class="btn-explore" href="#">
+    <span class="label">Explore More</span>
+    <span class="icon"><i class="fa-solid fa-arrow-right"></i></span>
+  </a>
+</div>
+        <button class="fancy-btn">
+  Fancy Button
+  <span class="fancy-btn__horizontal"></span>
+  <span class="fancy-btn__vertical"></span>
+</button>
             <div class="buttons-bottom">
-    <button class="btn-13">Hover Me</button>
+    <button class="btn-13 btn-8"><span>Hover Me</span></button>
     <button class="btn-14">Explore More</button>
   </div>
         </div>
